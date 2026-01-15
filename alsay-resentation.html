@@ -44,7 +44,6 @@
             border-bottom: 10px solid var(--accent-cyan);
         }
 
-        /* Title Style */
         .slide-title {
             font-size: 44px;
             font-weight: 800;
@@ -58,11 +57,9 @@
         h3 { color: var(--accent-cyan); font-size: 28px; margin-bottom: 20px; border-bottom: 2px solid #f0f0f0; padding-bottom: 10px; }
         p, li { font-size: 21px; line-height: 1.8; color: var(--text-dark); }
 
-        /* Grid Layouts */
         .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
         .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
 
-        /* Card System */
         .info-card {
             background: var(--bg-light);
             padding: 30px;
@@ -78,7 +75,7 @@
             text-align: center;
             border-top: 5px solid var(--primary-navy);
             box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-            transition: transform 0.3s;
+            transition: all 0.3s ease;
         }
         .team-card:hover { transform: translateY(-10px); border-top-color: var(--accent-cyan); }
         .team-icon { font-size: 50px; color: var(--accent-cyan); margin-bottom: 20px; }
@@ -95,7 +92,6 @@
             font-size: 22px;
         }
 
-        /* Timeline Matrix */
         .timeline-box {
             width: 100%;
             border-collapse: collapse;
@@ -105,7 +101,6 @@
         .timeline-box td { border: 1px solid #e0e0e0; padding: 20px; font-size: 18px; }
         .active-cell { background: rgba(0, 163, 255, 0.1); color: var(--primary-navy); font-weight: 700; text-align: center; }
 
-        /* Special Hero Slide */
         .hero-slide {
             background: linear-gradient(135deg, var(--primary-navy) 0%, #0A2D4F 100%);
             color: white;
@@ -127,117 +122,113 @@
 </head>
 <body>
 
-<!-- 1. Title Slide -->
+<!-- 1. شريحة العنوان -->
 <div class="slide hero-slide">
     <h1>استراتيجية تقييم الوضع الراهن وبناء المخطط العام</h1>
-    <p>بناء الهوية المؤسسية والتحول الرقمي لشركة "عبدربه الصي"</p>
+    <p>بناء المرجعية المؤسسية والتحول الرقمي لشركة "عبدربه الصي"</p>
     <div style="margin-top: 60px; font-size: 20px; opacity: 0.8; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 30px;">
         مكتب الحكماء للاستشارات الاستراتيجية | فبراير - مارس 2026
     </div>
 </div>
 
-<!-- 2. Scope: The 4 Pillars Deep Dive -->
+<!-- 2. نطاق العمل التفصيلي -->
 <div class="slide">
-    <h2 class="slide-title">نطاق العمل: دراسة شاملة للمحاور الأربعة</h2>
+    <h2 class="slide-title">نطاق العمل: دراسة وتحليل المحاور الأربعة</h2>
     <div class="content-area">
         <div class="grid-2">
             <div class="info-card">
-                <h3><i class="fa-solid fa-users"></i> رأس المال البشري</h3>
-                <p>لن نكتفي بمراجعة كشف الرواتب، بل سنقوم بـ:</p>
+                <h3><i class="fa-solid fa-users-gear"></i> رأس المال البشري</h3>
                 <ul class="bullet-list" style="font-size: 18px;">
-                    <li>تحليل كفاءة القيادات والكوادر الحالية.</li>
-                    <li>دراسة مدى ملاءمة الهيكل التنظيمي الحالي لتحقيق رؤية الشركة.</li>
-                    <li>تحديد الفجوات المهارية والاحتياجات التدريبية المستقبلية.</li>
+                    <li><strong>تحليل الكفاءات:</strong> تقييم مهارات الفريق الحالي ومدى مواءمتها لمتطلبات النمو.</li>
+                    <li><strong>الهياكل التنظيمية:</strong> مراجعة خطوط السلطة والمسؤولية لضمان عدم تداخل الاختصاصات.</li>
+                    <li><strong>مصفوفة الصلاحيات:</strong> وضع المقترحات الأولية لتوزيع الصلاحيات الإدارية والمالية.</li>
                 </ul>
             </div>
             <div class="info-card">
                 <h3><i class="fa-solid fa-microchip"></i> التكنولوجيا المتاحة</h3>
-                <p>تقييم البنية التكنولوجية الحالية من حيث:</p>
                 <ul class="bullet-list" style="font-size: 18px;">
-                    <li>مدى تكامل الأنظمة الحالية وقدرتها على توفير بيانات دقيقة.</li>
-                    <li>أمن المعلومات وسهولة الوصول للبيانات من قبل متخذي القرار.</li>
-                    <li>تحديد الجدوى من تحديث الأنظمة الحالية أو استبدالها.</li>
+                    <li><strong>البنية التحتية:</strong> تقييم الأنظمة والبرامج الحالية وقدرتها على توفير تقارير دقيقة.</li>
+                    <li><strong>الفجوة الرقمية:</strong> تحديد الفجوات التقنية التي تعيق سرعة اتخاذ القرار.</li>
+                    <li><strong>الحلول المقترحة:</strong> ترشيح أنظمة (ERP) والحلول التكنولوجية الأنسب لنشاط الشركة.</li>
                 </ul>
             </div>
         </div>
         <div class="grid-2" style="margin-top: 30px;">
             <div class="info-card">
-                <h3><i class="fa-solid fa-compass"></i> الرؤية والاستراتيجية</h3>
+                <h3><i class="fa-solid fa-eye"></i> الرؤية والاستراتيجية</h3>
                 <ul class="bullet-list" style="font-size: 18px;">
-                    <li>تقييم مدى وضوح أهداف الشركة لدى الفريق التنفيذي.</li>
-                    <li>تحليل السوق والمنافسين لتحديد موقع الشركة الاستراتيجي.</li>
-                    <li>رسم الأهداف الاستراتيجية الكبرى للسنوات الثلاث القادمة.</li>
+                    <li><strong>التوجه الاستراتيجي:</strong> تحليل رؤية الملاك وتحويلها إلى أهداف تشغيلية واضحة.</li>
+                    <li><strong>الميزة التنافسية:</strong> دراسة وضع الشركة في السوق وتحديد فرص التميز المستقبلي.</li>
                 </ul>
             </div>
             <div class="info-card">
-                <h3><i class="fa-solid fa-sack-dollar"></i> الإمكانيات المالية</h3>
+                <h3><i class="fa-solid fa-coins"></i> الإمكانيات المالية</h3>
                 <ul class="bullet-list" style="font-size: 18px;">
-                    <li>تحليل الميزانيات المخصصة للتطوير والنمو.</li>
-                    <li>دراسة تكلفة التحول الرقمي مقابل العائد المتوقع على الاستثمار.</li>
-                    <li>ضمان أن الاستراتيجية المقترحة "واقعية" ومطابقة لقدرات الشركة المالية.</li>
+                    <li><strong>تحليل الموارد:</strong> دراسة القدرات المالية المتاحة لدعم خطة التحول الرقمي.</li>
+                    <li><strong>الجدوى المالية:</strong> ضمان أن الاستراتيجية المقترحة تقع ضمن نطاق القدرة المالية للشركة.</li>
                 </ul>
             </div>
         </div>
     </div>
 </div>
 
-<!-- 3. Methodology: Detailed Steps -->
+<!-- 3. المنهجية والخطوات باستفاضة -->
 <div class="slide">
-    <h2 class="slide-title">منهجية العمل: كيف سنصل للنتائج؟</h2>
+    <h2 class="slide-title">منهجية العمل: رحلة التطوير (60 يوماً)</h2>
     <div class="content-area">
-        <div class="info-card" style="margin-bottom: 30px; border-right: 8px solid var(--accent-cyan);">
-            <p><strong>المرحلة الأولى: التشخيص المعمق (3 أسابيع)</strong></p>
-            <p style="font-size: 18px;">تبدأ هذه المرحلة بجمع كافة الوثائق الإدارية والمالية والتقنية، وإجراء مقابلات شخصية مكثفة مع رؤساء الأقسام. نهدف هنا إلى اكتشاف "الحقيقة المجردة" عن وضع الشركة، وتحديد العوائق التي تمنعها من الانطلاق.</p>
+        <div class="info-card" style="margin-bottom: 25px; border-right: 8px solid var(--accent-cyan);">
+            <p><strong>المرحلة الأولى: التشخيص المعمق (جمع البيانات وتحليل الفجوات)</strong></p>
+            <p style="font-size: 18px;">نقوم خلال هذه المرحلة بعقد ورش عمل مكثفة مع كافة الأطراف المعنية، ومراجعة الوثائق الحالية. الهدف هو اكتشاف العوائق الحقيقية التي تمنع الشركة من التوسع، وتقديم تقرير صريح بوضع الشركة الراهن في المحاور الأربعة.</p>
         </div>
-        <div class="info-card" style="margin-bottom: 30px; border-right: 8px solid var(--primary-navy);">
-            <p><strong>المرحلة الثانية: التصميم والنمذجة (3 أسابيع)</strong></p>
-            <p style="font-size: 18px;">بناءً على نتائج التشخيص، نبدأ في تصميم "المخطط المستقبلي". يشمل ذلك صياغة قواعد الحوكمة، رسم الهيكل التنظيمي الجديد، وتحديد قائمة الأنظمة التكنولوجية المقترحة. هنا نضع "القواعد" التي ستسير عليها الشركة.</p>
+        <div class="info-card" style="margin-bottom: 25px; border-right: 8px solid var(--primary-navy);">
+            <p><strong>المرحلة الثانية: صياغة الاستراتيجية ودليل الحوكمة</strong></p>
+            <p style="font-size: 18px;">بناءً على نتائج التشخيص، نبدأ بتصميم "المخطط الهندسي" للشركة. يشمل ذلك رسم الهياكل التنظيمية الحديثة، وصياغة قواعد الحوكمة التي تضمن التحكم والشفافية، بالإضافة إلى تحديد خارطة طريق التحول الرقمي.</p>
         </div>
         <div class="info-card" style="border-right: 8px solid var(--accent-cyan);">
-            <p><strong>المرحلة الثالثة: صياغة المجلد والاعتماد (أسبوعان)</strong></p>
-            <p style="font-size: 18px;">تجميع كافة الدراسات والتوصيات في "مجلد الاستراتيجية الشامل". يتم عرض المسودة النهائية على الإدارة لمناقشتها وإجراء أي تعديلات لضمان توافقها الكامل مع طموحاتكم، ثم التسليم النهائي للمجلد المطبوع والرقمي.</p>
+            <p><strong>المرحلة الثالثة: إعداد المجلد النهائي والاعتماد</strong></p>
+            <p style="font-size: 18px;">تجميع كافة المخرجات في "مجلد الاستراتيجية الشامل". يتم تقديمه للإدارة ومناقشته باستفاضة لإجراء التعديلات النهائية، ليكون بمثابة المرجع القانوني والإداري الأول للشركة في كافة قراراتها القادمة.</p>
         </div>
     </div>
 </div>
 
-<!-- 4. The Team: Meet the Experts -->
+<!-- 4. فريق العمل (أيقونات موحدة) -->
 <div class="slide">
-    <h2 class="slide-title">فريق العمل: خبراء في قيادة التغيير</h2>
+    <h2 class="slide-title">فريق العمل: نخبة من الخبراء المتخصصين</h2>
     <div class="content-area">
         <div class="grid-3">
             <div class="team-card">
                 <div class="team-icon"><i class="fa-solid fa-user-tie"></i></div>
                 <h4>د. محمد فوده</h4>
                 <p style="font-size: 16px; color: var(--accent-cyan); font-weight: bold; margin-bottom: 10px;">رئيس اللجنة والإشراف العام</p>
-                <p style="font-size: 15px;">خبير دولي في الحوكمة واستراتيجيات الشركات الكبرى. يتولى مسؤولية الربط الاستراتيجي وضمان جودة المخرجات النهائية للمشروع.</p>
+                <p style="font-size: 15px;">خبير دولي في استراتيجيات الحوكمة. مسؤول عن التوجه العام للمشروع وضمان مواءمة الاستراتيجية مع رؤية الملاك الكبرى.</p>
             </div>
             <div class="team-card">
-                <div class="team-icon"><i class="fa-solid fa-id-card-clip"></i></div>
+                <div class="team-icon"><i class="fa-solid fa-user-tie"></i></div>
                 <h4>د. كريم عبد الرؤوف</h4>
                 <p style="font-size: 16px; color: var(--accent-cyan); font-weight: bold; margin-bottom: 10px;">خبير الموارد البشرية والنمو</p>
-                <p style="font-size: 15px;">متخصص في تطوير رأس المال البشري وهيكلة المنظمات. مسؤول عن تحليل الأداء البشري وتصميم الهياكل التنظيمية الحديثة.</p>
+                <p style="font-size: 15px;">متخصص في هيكلة المنظمات وتطوير رأس المال البشري. مسؤول عن تحليل الأداء وتصميم الهياكل الإدارية ومصفوفة الصلاحيات.</p>
             </div>
             <div class="team-card">
-                <div class="team-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <div class="team-icon"><i class="fa-solid fa-user-tie"></i></div>
                 <h4>أ. سامح الجوهري</h4>
                 <p style="font-size: 16px; color: var(--accent-cyan); font-weight: bold; margin-bottom: 10px;">خبير التميز المؤسسي</p>
-                <p style="font-size: 15px;">خبير في تطوير العمليات والقدرات المؤسسية. يتولى مسؤولية تحليل المسارات التشغيلية واقتراح حلول التحول الرقمي المناسبة.</p>
+                <p style="font-size: 15px;">خبير في تطوير العمليات المؤسسية. يتولى تحليل البنية التكنولوجية الحالية واقتراح حلول التحول الرقمي المناسبة لطبيعة النشاط.</p>
             </div>
         </div>
-        <div style="text-align: center; margin-top: 40px; background: var(--bg-light); padding: 20px; border-radius: 15px;">
-            <p style="font-size: 18px; color: var(--text-muted);"><i class="fa-solid fa-users-gear"></i> يدعم اللجنة فريق فني متخصص من الاستشاريين المساعدين في مجالات التقنية والمالية والتدقيق.</p>
+        <div style="text-align: center; margin-top: 40px; background: var(--bg-light); padding: 20px; border-radius: 15px; border: 1px dashed var(--accent-cyan);">
+            <p style="font-size: 18px; color: var(--text-muted);">يدعم الفريق الاستشاري مجموعة من المساعدين الفنيين في مجالات التقنية والمالية والتدقيق لضمان دقة البيانات.</p>
         </div>
     </div>
 </div>
 
-<!-- 5. Timeline: 8-Week Breakdown -->
+<!-- 5. الجدول الزمني التفصيلي -->
 <div class="slide">
-    <h2 class="slide-title">الجدول الزمني التفصيلي (فبراير - مارس)</h2>
+    <h2 class="slide-title">الجدول الزمني للتنفيذ (فبراير - مارس)</h2>
     <div class="content-area">
         <table class="timeline-box">
             <thead>
                 <tr>
-                    <th>المرحلة التنفيذية</th>
+                    <th>المرحلة</th>
                     <th>فبراير (الأسبوع 1-2)</th>
                     <th>فبراير (الأسبوع 3-4)</th>
                     <th>مارس (الأسبوع 1-2)</th>
@@ -247,13 +238,13 @@
             <tbody>
                 <tr>
                     <td><strong>تقييم الوضع الراهن وجمع البيانات</strong></td>
-                    <td class="active-cell">تنفيذ مكثف</td>
-                    <td class="active-cell">تحليل نهائي</td>
+                    <td class="active-cell">تنفيذ ورش العمل</td>
+                    <td class="active-cell">تحليل البيانات</td>
                     <td>-</td>
                     <td>-</td>
                 </tr>
                 <tr>
-                    <td><strong>دراسة المحاور (بشري - تقني - مالي)</strong></td>
+                    <td><strong>دراسة المحاور (بشري/تقني/مالي)</strong></td>
                     <td>-</td>
                     <td class="active-cell">بدء الدراسة</td>
                     <td class="active-cell">صياغة النتائج</td>
@@ -264,36 +255,36 @@
                     <td>-</td>
                     <td>-</td>
                     <td class="active-cell">كتابة المسودة</td>
-                    <td class="active-cell">المراجعة</td>
+                    <td class="active-cell">المراجعة النهائية</td>
                 </tr>
                 <tr>
-                    <td><strong>تسليم "مجلد الاستراتيجية" النهائي</strong></td>
+                    <td><strong>تسليم "مجلد الاستراتيجية"</strong></td>
                     <td>-</td>
                     <td>-</td>
                     <td>-</td>
-                    <td class="active-cell" style="background: var(--accent-cyan); color: white;">التسليم النهائي</td>
+                    <td class="active-cell" style="background: var(--accent-cyan); color: white;">التسليم والاعتماد</td>
                 </tr>
             </tbody>
         </table>
     </div>
 </div>
 
-<!-- 6. Final Deliverable: The Strategy Folder -->
+<!-- 6. المخرج النهائي: المجلد -->
 <div class="slide">
     <h2 class="slide-title">المخرج النهائي: مجلد الاستراتيجية الشامل</h2>
     <div class="content-area">
         <div class="grid-2">
-            <div style="background: var(--primary-navy); color: white; padding: 40px; border-radius: 30px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+            <div style="background: var(--primary-navy); color: white; padding: 50px; border-radius: 30px; text-align: center;">
                 <i class="fa-solid fa-folder-open" style="font-size: 120px; color: var(--accent-cyan); margin-bottom: 20px;"></i>
                 <h2>مجلد الاستراتيجية</h2>
-                <p style="color: #CBD5E1;">"الدليل المرجعي للنمو والتحكم"</p>
+                <p style="color: #CBD5E1;">"المخطط العام للشركة"</p>
             </div>
             <div>
-                <p>هذا المجلد هو نتاج 60 يوماً من العمل الاحترافي، وسيضم:</p>
+                <p>هذا المجلد هو الوثيقة الرسمية التي ستحصلون عليها في نهاية العقد، وسيضم:</p>
                 <ul class="bullet-list">
-                    <li><strong>تقرير التشخيص:</strong> تحليل واقعي وصريح لنقاط القوة والضعف.</li>
-                    <li><strong>دستور الحوكمة:</strong> مصفوفة الصلاحيات (LoA) والهيكل التنظيمي المعتمد.</li>
-                    <li><strong>دليل التحول الرقمي:</strong> قائمة الأنظمة المقترحة وخطة تفعيلها.</li>
+                    <li><strong>تقرير التشخيص:</strong> تحليل شامل لنقاط القوة والضعف والمخاطر.</li>
+                    <li><strong>دستور الحوكمة:</strong> الهيكل التنظيمي المعتمد ومصفوفة الصلاحيات المالية والإدارية.</li>
+                    <li><strong>خطة التحول الرقمي:</strong> التوصيات التكنولوجية وخارطة طريق تنفيذها.</li>
                     <li><strong>خريطة الطريق التنفيذية:</strong> خطوات ما بعد الاستراتيجية (ماذا تفعلون غداً؟).</li>
                 </ul>
             </div>
@@ -301,35 +292,35 @@
     </div>
 </div>
 
-<!-- 7. Financial Investment & Payments -->
+<!-- 7. الاستثمار المالي وجدولة الدفعات -->
 <div class="slide">
     <h2 class="slide-title">الاستثمار المالي وجدولة الدفعات</h2>
     <div class="content-area">
         <div class="grid-2">
             <div class="info-card" style="text-align: center; justify-content: center; display: flex; flex-direction: column;">
-                <p style="font-size: 24px;">إجمالي المقابل المالي للمشروع</p>
+                <p style="font-size: 26px;">إجمالي المقابل المالي للمشروع</p>
                 <div class="price-tag">150,000</div>
                 <p style="font-size: 24px; color: var(--primary-navy);">جنيه مصري فقط لا غير</p>
             </div>
             <div class="info-card">
-                <h3>نظام الدفعات المالية:</h3>
+                <h3>نظام الدفعات (تسهيلات):</h3>
                 <ul class="bullet-list" style="font-size: 19px;">
-                    <li><strong>الدفعة الأولى (50%):</strong> بقيمة 75,000 ج.م <br><small>تُسدد فور توقيع العقد (بداية فبراير).</small></li>
-                    <li style="margin-top: 15px;"><strong>الدفعة الثانية (25%):</strong> بقيمة 37,500 ج.م <br><small>تُسدد بعد مرور شهر من بدء العمل (بداية مارس).</small></li>
-                    <li style="margin-top: 15px;"><strong>الدفعة النهائية (25%):</strong> بقيمة 37,500 ج.م <br><small>تُسدد عند التسليم النهائي للمجلد المعتمد.</small></li>
+                    <li><strong>الدفعة الأولى (50%):</strong> بقيمة 75,000 ج.م <br><small>تُسدد عند توقيع التعاقد (بداية فبراير).</small></li>
+                    <li style="margin-top: 15px;"><strong>الدفعة الثانية (25%):</strong> بقيمة 37,500 ج.م <br><small>تُسدد بعد مرور 30 يوماً من العمل (بداية مارس).</small></li>
+                    <li style="margin-top: 15px;"><strong>الدفعة النهائية (25%):</strong> بقيمة 37,500 ج.م <br><small>تُسدد عند التسليم النهائي للمجلد واعتماده.</small></li>
                 </ul>
             </div>
         </div>
     </div>
 </div>
 
-<!-- 8. Final Message -->
+<!-- 8. الخاتمة -->
 <div class="slide hero-slide">
     <i class="fa-solid fa-award" style="font-size: 100px; color: var(--accent-cyan); margin-bottom: 30px;"></i>
-    <h1>نحن ملتزمون بنجاحكم</h1>
-    <p>مكتب الحكماء - خبراتنا تضعكم في الصدارة دائماً</p>
+    <h1>شريككم في صياغة المستقبل</h1>
+    <p>مكتب الحكماء - نضع بين أيديكم المخطط الهندسي لنجاحكم المستمر.</p>
     <div style="margin-top: 50px; font-size: 18px; opacity: 0.6;">
-        نشكركم على ثقتكم الغالية، ونتطلع لبدء العمل فوراً.
+        نشكركم على ثقتكم الغالية، ونتطلع لبدء العمل في فبراير 2026.
     </div>
 </div>
 
